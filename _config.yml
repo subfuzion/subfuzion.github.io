@@ -111,5 +111,3 @@ ga_username: 'UA-45746105-1'
 #build config
 pygments: true
 markdown: kramdown
-
-markdown_ext: foo
