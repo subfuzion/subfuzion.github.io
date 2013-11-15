@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  {% include seo.html %}
+
+  <link type="text/plain" rel="author" href="{{ site.url }}/humans.txt">
+
+  <link rel="icon" href="favicon.ico?v=2" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico?v=2" type="image/x-icon">
+
+  {% if page.icons %}
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  {% endif %}
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <link rel="stylesheet" media="screen"
+    href="{{ site.url }}/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" media="screen"
+    href="{{ site.url }}/assets/css/style.css">
+
+  <script src="/assets/js/modernizr-2.5.3-respond-1.1.0.min.js"></script>
+
+</head>
+<body class="{{ page.layout }} post{{ page.id | replace:"/","-" }}">
+
+<div class="container">
+
+  {% if page.layout == "x-default" %}
+  <div class="jumbotron">&nbsp;</div>
+  {% endif %}
+
+  {% include nav.html %}
+
+  <div class="content" id="content" role="main">

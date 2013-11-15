@@ -1,0 +1,115 @@
+#title of site
+name: Tony Pujals
+
+#description of site
+description: "Node, MongoDB, REST API, Open Data"
+
+#URL of site, include http://, do not include a trailing slash
+url: http://tonypujals.io
+
+#files to exclude, array
+exclude: [ 'readme.md', 'vendor' ]
+
+#number of items in RSS feed
+rss_limit: 10
+
+#permalink structure, see https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink: /:year/:month/:day/:title/
+
+#prose config, see http://prose.io/help/handbook.html
+prose:
+  siteurl: "http://tonypujals.io"
+  media: assets/img
+  relativeLinks: http://tonypujals.io/links.jsonp
+  metadata:
+    _posts:
+      - name: categories
+        field:
+          label: Categories
+          element: select
+          placeholder: Select a category
+          options:
+            - name: API
+              value: api
+            - name: Big Data
+              value: bigdata
+            - name: Cloud
+              value: cloud
+            - name: Mobile
+              value: mobile
+            - name: MongoDB
+              value: mongodb
+            - name: Node
+              value: node
+            - name: NoSQL
+              value: nosql
+      - name: layout
+        field:
+          element: hidden
+          value: post
+      - name: title
+        field:
+          element: text
+          label: Title
+          value: ""
+      - name: excerpt
+        field:
+          element: text
+          label: Excerpt
+          value: ""
+      - name: author
+        field:
+          element: text
+          label: Author
+          value: Tony Pujals
+      - name: comments
+        field:
+          element: checkbox
+          label: Comments Enabled
+          value: true
+      - name: tags
+        field:
+          element: text
+          label: Tags
+          value: ""
+    "/":
+      - name: title
+        field:
+          element: text
+          label: Title
+          value: ""
+      - name: excerpt
+        field:
+          element: text
+          value: ""
+      - name: id
+        field:
+          element: text
+          value: ""
+      - name: layout
+        field:
+          element: select
+          placeholder: Select a layout
+          options:
+            - name: Page
+              value: page
+            - name: Home
+              value: home
+            - name: Default
+              value: default
+            - name: Resume
+              value: resume
+
+#disqus widget
+disqus:
+  shortname: 'tonypujals'
+  count: 5
+  
+#google analytics username
+ga_username: 'UA-45746105-1'
+
+#build config
+pygments: true
+markdown: kramdown
+
+markdown_ext: foo

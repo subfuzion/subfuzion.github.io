@@ -4,6 +4,5 @@ The personal blog of Tony Pujals. Built using GitHub Pages, Jekyll, and Bootstra
 
 ## License
 
-Content: [Creative Commons, BY-NC-SA](http://creativecommons.org/licenses/by-nc-sa/3.0/)
-
-Code: [MIT](http://opensource.org/licenses/mit-license.php)
+* Content: [Creative Commons (CC BY-NC-SA 3.0)](http://creativecommons.org/licenses/by-nc-sa/3.0/)
+* Code: [MIT](http://opensource.org/licenses/mit-license.php)

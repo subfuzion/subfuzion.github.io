@@ -1,0 +1,15 @@
+<div class="navbar">
+  <ul class="nav navbar-nav">
+    <h1><a class="navbar-brand" href="{{ site.url }}/">{{ site.name }}</a></h1>
+    <li id="home"{% if page.url == '/index.html' %} class="active"{% endif %}>
+      <a href="{{ site.url }}/">Home</a>
+    </li>
+    <li id="about"{% if page.url == "/about/"%} class="active"{% endif %}>
+      <a href="{{ site.url }}/about/" rel="author">About</a>
+    </li>
+    <li id="contact"{% if page.url == "/contact/"%} class="active"{% endif %}>
+      <a href="{{ site.url }}/contact/">Contact</a>
+    </li>
+  </ul>
+  <p class="navbar-text pull-right">{{ site.description }}</p>
+</div><!-- navbar -->
