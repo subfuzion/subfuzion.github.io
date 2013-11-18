@@ -8,11 +8,7 @@ categories: [mongodb, nosql, api]
 
 ## Overview
 
-In my [last post](/2013/11/12/announcing-snapfinder/), I introduced SNAPfinder, a mobile-first web app, along with a separate framework and REST API, for helping low-income citizens find nearby participating SNAP stores (SNAP was formerly known as the "food stamps" program).
-
-In this series, we will do a deep dive on the technology stack and tools involved, which, depending on the specific portion of the stack, included Node, MongoDB, Express and EJS templates, Twitter Bootstrap, and Digital Ocean.
-
-In this post, we will cover the process of harvesting USDA SNAP CSV data. We will store data in MongoDB and augment it to support fast geo queries. These geo queries will be used to locate nearby SNAP stores from a particular location.
+In my [last post](/2013/11/13/about-snap-data/), I discussed SNAP data. In this post, we will cover the process of harvesting USDA SNAP CSV data. We will store data in MongoDB and augment it to support fast geo queries. These geo queries will be used to locate nearby SNAP stores from a particular location.
 
 We will exploit two Cloud-hosted services to reduce the amount of effort it takes to create an environment for working with the data. For our purposes, the free plan of both services will be adequate.
 
