@@ -1,5 +1,5 @@
 ---
-title: "Harvesting SNAP Data with Cloud9 and MongoDB"
+title: "Harvesting SNAP Data with Cloud9 and MongoDB (Part 1)"
 layout: post
 comments: true
 excerpt:
