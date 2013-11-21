@@ -31,7 +31,8 @@ The URL retrieves a zip file that stores a single CSV file with a .csv extension
 
 When we import the data into mongo, we will map the field names to more JSON friendly names as shown in the following table.
 
-| CSV Field       | Map to |
+|-----------------+-----------|
+| CSV Field       | Map to    |
 |:----------------|:----------|
 | Store_Name      | storeName |
 | Longitude       | longitude |
@@ -42,6 +43,7 @@ When we import the data into mongo, we will map the field names to more JSON fri
 | State           | state     |
 | Zip5            | zip5      |
 | Zip4            | zip4      |
+|-----------------+-----------|
 
 ## Next steps
 
