@@ -10,7 +10,7 @@ categories: [mongodb, nosql, api]
 
 In my [last post](/2013/11/17/harvesting-snap-data-with-cloud9-and-mongodb-part-2/), we imported data into a mongo database stored in MongoLab's cloud. We used Cloud9 for the convenience of a ready-to-run environment for using the mongoimport utility and the mongo shell for testing a few queries.
 
-In this post, we'll discuss performing an post-import update on our stores collection that allows us to exploit mongo's support for geospatial queries. This will support the use case in which we can find the stores that are closest to a particular location. For example, give a user's current location, we want to find participating SNAP retailers within a desired range, such as three miles.
+In this post, we'll discuss performing an post-import update on our stores collection that allows us to exploit mongo's support for geospatial queries. This will support the use case in which we can find the stores that are closest to a particular location. For example, given a user's current location, we want to find participating SNAP retailers within a desired range, such as three miles.
 
 Because the update logic is a bit unwieldy to type interactively in the mongo shell, we'll see how to use Cloud9 to save our update logic as a script that we can load and execute into the shell when we want to run it.
 
@@ -28,7 +28,7 @@ For each store document stored in our stores collection, we'll add a new field t
 { loc: [ lng, lat ] }
 ~~~
 
-With this specific coordinate format, it isn't necessary but we will want to creat a 2d index on these points to improve query performance, as discussed in the next section.
+With this specific coordinate format, it isn't necessary but we will want to create a 2d index on these points to improve query performance, as discussed in the next section.
 
 ## Geo support update script
 
@@ -59,7 +59,7 @@ In the Cloud9 Terminal, start the mongo shell; then load our newly created updat
 
     > load('postimport.js')
 
-This will load and execute the script, as shown in the screenshot below. Be warned that this process will around five minutes! There are different strategies we can pursue to make this a faster process. One would involve running our script on the server instead of from the shell in Cloud9 -- but that would require administrative permission not available with the shared plan we're using with MongoLab; other possibilities include transforming the data before it was imported, but for this blog series I wanted to keep the focus on things we can do to manipulate data within mongo.
+This will load and execute the script, as shown in the screenshot below. Be warned that this process will take around five minutes! There are different strategies we can pursue to make this a faster process. One would involve running our script on the server instead of from the shell in Cloud9 -- but that would require administrative permission not available with the shared plan we're using with MongoLab; other possibilities include transforming the data before it was imported, but for this blog series I wanted to keep the focus on things we can do to manipulate data within mongo.
 
 ![load script](/assets/img/snap/mongo-postimport-02.png "load script")
 

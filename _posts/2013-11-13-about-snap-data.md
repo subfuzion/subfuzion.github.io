@@ -2,13 +2,13 @@
 title: "About SNAP Data"
 layout: post
 comments: true
-excerpt:
 categories: [mongodb, nosql, api]
+excerpt: In this series, we do a deep dive on the technology stack, which includes Node, MongoDB, Express, and Bootstrap, for building a SNAP API.
 ---
 
 ## Overview
 
-In my [last post](/2013/11/12/announcing-snapfinder/), I introduced SNAPfinder, a mobile-first web app, along with a separate framework and REST API, for helping low-income citizens find nearby participating SNAP stores (SNAP was formerly known as the "food stamps" program).
+In my [last post](/2013/11/12/announcing-snapfinder/), I introduced [SNAPfinder](http://snapfinder.org/), a mobile-first web app, along with a separate framework and REST API, for helping low-income citizens find nearby participating SNAP stores (SNAP was formerly known as the "food stamps" program).
 
 In this series, we will do a deep dive on the technology stack and tools involved, which, depending on the specific portion of the stack, included Node, MongoDB, Express and EJS templates, Twitter Bootstrap, and Digital Ocean.
 
