@@ -21,6 +21,8 @@ body {
     .alignleft, .alignright { float: none; clear: both; margin-left: auto; margin-right: auto; }
 }
 
+img { margin-top: 20px; margin-bottom: 20px; max-width: 100%; }
+
 /* Footnotes */
 .footnotes { font-size: .9em; }
 .footnotes ol { padding-left: 20px; }
