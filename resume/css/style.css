@@ -1,0 +1,211 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic);
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+
+/* Borders and Spacing */
+body {
+  display: none;
+  font-family: Source Sans Pro, Open Sans, Helvetica, Arial, sans-serif;
+  background-color: #1F1F1F;
+  font-weight: 300;
+}
+
+.container {
+  max-width: 700px;
+  background-color: #fff;
+  padding: 25px 50px;
+  margin: 20px auto;
+}
+
+.row-fluid {
+  border-bottom: 1px solid #dddddd;
+}
+
+article {
+  padding: 20px 0;
+
+}
+
+footer {
+  text-align: right;
+  padding-top: 10px;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+}
+
+.skills {
+  border: 0;
+  padding-top:15px;
+	
+}
+
+/* Links */
+a {
+  color: #000000;
+  border-bottom: 1px solid #3399FF;
+  -o-transition: color 0.5s ease-out, background 0.6s ease-in;
+  -ms-transition: color 0.5s ease-out, background 0.6s ease-in;
+  -moz-transition: color 0.5s ease-out, background 0.6s ease-in;
+  -webkit-transition: color 0.5s ease-out, background 0.6s ease-in;
+  /* ...and now override with proper CSS property */
+
+  transition: color 0.5s ease-out, background 0.6s ease-in;
+}
+
+a:hover {
+  color: #333333;
+  background: #F9F9F9;
+  text-decoration: none;
+}
+
+footer a {
+  padding: 0 ;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Open Sans, Source Sans Pro, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #000;
+  line-height: 100%;
+}
+
+h1 {
+  font-size: 35px;
+  line-height: 10px;
+  padding-top: 20px;
+  font-weight: 700;
+  font-family: Open Sans;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 21px;
+  padding-top: 20px;
+  text-align: left;
+}
+
+h3 {
+  font-size: 20px ;
+}
+
+h4 {
+  font-size: 16px ;
+  line-height: 30px;
+}
+
+h5 {
+  font-size: 12px;
+}
+
+strong {
+  font-weight: 400;
+}
+
+p {
+  font-size: 16px;
+  margin: 0px;
+}
+
+.welcome {
+  font-size: 24px;
+  text-indent: 0px;
+  line-height: 30px;
+}
+
+.auth {
+  text-align: right;
+  font-size: 16px;
+}
+
+/* Contact */
+.social {
+  padding: 30px 0px;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.social a {
+  font-size: 20px;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.social li {
+  list-style: none;
+  line-height: 25px;
+}
+
+/* Images */
+img {
+  border: 1px solid #dddddd;
+  margin: 15px;
+  float: left;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  body {
+    display: block;
+    padding: 0px;
+  }
+  .container {
+    margin: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .social {
+    margin-top: 10px;
+  }
+  .social ul li {
+    display: inline-block;
+  }
+  .social ul {
+    margin-top: 21px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 15px ;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    padding: 15px ;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  .social ul li {
+    display: block;
+  }
+
+  .social ul {
+    margin-top: 16px;
+    padding: 0 34px;
+  }
+
+  article {
+    padding: 10px 0;
+  }
+
+}
+
+.fa-check { display: block; }
