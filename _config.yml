@@ -5,7 +5,7 @@ name: Tony Pujals
 description: "Node, MongoDB, REST API, Open Data"
 
 #URL of site, include http://, do not include a trailing slash
-url: http://tonypujals.io
+url: http://tonypujals.github.io
 
 #files to exclude, array
 exclude: [ 'readme.md', 'vendor' ]
