@@ -76,7 +76,7 @@ By default, you'll get a dump of the first ten lines of the file. You can see th
 
 ## Import SNAP Data
 
-Now we can import the data into our mongo database using the [mongoimport](http://docs.mongodb.org/manual/reference/program/mongoimport/#bin.mongoimport) utility, which can import data in either [json](http://json.org/), [csv](http://en.wikipedia.org/wiki/Comma-separated_values), [tsv](http://en.wikipedia.org/wiki/Tab-separated_values) formats.
+Now we can import the data into our mongo database using the [mongoimport](https://docs.mongodb.org/manual/reference/program/mongoimport/#bin.mongoimport) utility, which can import data in either [json](https://json.org/), [csv](https://en.wikipedia.org/wiki/Comma-separated_values), [tsv](https://en.wikipedia.org/wiki/Tab-separated_values) formats.
 
 The header field names are not in an object-friendly format, so we'll provide mongoimport with the actual field names we'd like to use when it stores the data. We'll store the field names in a variable that we'll use with the mongoimport command so that the command itself doesn't look so long.
 
@@ -158,6 +158,6 @@ If I had wanted to save the cursor in a variable, then I could have done somethi
 
 ## Next steps
 
-We now have data and we can perform queries, such as find the stores within a city or zip code, and with a bit of effort and math (see using the [Havesine formula](http://www.movable-type.co.uk/scripts/latlong.html)), we can compute distances to stores to find those within a desired range of a specific location.
+We now have data and we can perform queries, such as find the stores within a city or zip code, and with a bit of effort and math (see using the [Havesine formula](https://www.movable-type.co.uk/scripts/latlong.html)), we can compute distances to stores to find those within a desired range of a specific location.
 
 However, mongo has great support for fast geo queries that we can exploit as long as we provide location data in a specific format. In our next post, we cover the post-import updates we perform to take advantage of this facility.

@@ -12,9 +12,9 @@ In my [last post](/2013/11/13/about-snap-data/), I discussed SNAP data. In this 
 
 We will exploit two Cloud-hosted services to reduce the amount of effort it takes to create an environment for working with the data. For our purposes, the free plan of both services will be adequate.
 
-* [Cloud9](http://c9.io/) is a Cloud-hosted IDE. We will use the shell environment it provides to perform the tasks necessary to download SNAP data and import it into a mongo database.
+* [Cloud9](https://c9.io/) is a Cloud-hosted IDE. We will use the shell environment it provides to perform the tasks necessary to download SNAP data and import it into a mongo database.
 
-* [MongoLab](http://mongolab.com) provides a Cloud-hosted MongoDB service. We will use it to import and serve SNAP data to support our queries.
+* [MongoLab](https://mongolab.com) provides a Cloud-hosted MongoDB service. We will use it to import and serve SNAP data to support our queries.
 
 ## Cloud9
 
@@ -48,7 +48,7 @@ Right-click on the snapdata workspace folder and create a new file. Call it "not
 
 #### Create a new database
 
-Go to [MongoLab](http://mongolab.com) and sign up for an account. Once you're signed in, create a new database.
+Go to [MongoLab](https://mongolab.com) and sign up for an account. Once you're signed in, create a new database.
 
 ![Create database](/assets/img/snap/mongolab-create-db.png "Create database")
 
@@ -85,4 +85,3 @@ You're done with database creation. Save the connection information and database
 ## Next steps
 
 We now have everything in place to get SNAP data and loaded into a mongo database. In our next post, we'll walk through the steps of downloading, importing, transforming, and querying SNAP data interactively from the Cloud9 shell.
-

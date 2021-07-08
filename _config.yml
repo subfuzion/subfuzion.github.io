@@ -4,8 +4,8 @@ name: Tony Pujals
 #description of site
 description: "Node, MongoDB, REST API, Open Data"
 
-#URL of site, include http://, do not include a trailing slash
-url: http://tonypujals.github.io
+#URL of site, include https://, do not include a trailing slash
+url: https://tonypujals.github.io
 
 #files to exclude, array
 exclude: [ 'readme.md', 'vendor' ]
@@ -16,11 +16,11 @@ rss_limit: 10
 #permalink structure, see https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: /:year/:month/:day/:title/
 
-#prose config, see http://prose.io/help/handbook.html
+#prose config, see https://prose.io/help/handbook.html
 prose:
-  siteurl: "http://tonypujals.io"
+  siteurl: "https://tonypujals.io"
   media: assets/img
-  relativeLinks: http://tonypujals.io/links.jsonp
+  relativeLinks: https://tonypujals.io/links.jsonp
   metadata:
     _posts:
       - name: categories
@@ -104,7 +104,7 @@ prose:
 disqus:
   shortname: 'tonypujals'
   count: 5
-  
+
 #google analytics username
 ga_username: 'UA-45746105-1'
 
