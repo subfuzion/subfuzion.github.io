@@ -29,9 +29,9 @@ The result of two weekends and a few evenings of effort resulted in an actual co
 
 Challenge.gov iPhone app
 
-The app is an [open source project on GitHub](https://github.com/itsource/challenge-ios). It provides similar functionality to the existing website. The app uses a REST API written in Node.js, hosted by Modulus.io in the Amazon cloud.
+The app is an [open source project on GitHub](https://github.com/subfuzion/challenge-ios). It provides similar functionality to the existing website. The app uses a REST API written in Node.js, hosted by Modulus.io in the Amazon cloud.
 
-The [API is a separate GitHub project](https://github.com/itsource/challenge-api), which harvests the RSS feed hourly and stores the data in a MongoDB database hosted by MongoLab, also in the Amazon cloud. The hourly harvest job is kicked off using a cloud-based service at [CRON.io](https://cron.io/) (a project I recently joined). The rest of the API serves to respond to queries for data (for example, the [JSON equivalent](https://challengeapi-7312.onmodulus.net/challenges) of the source RSS feed).
+The [API is a separate GitHub project](https://github.com/subfuzion/challenge-api), which harvests the RSS feed hourly and stores the data in a MongoDB database hosted by MongoLab, also in the Amazon cloud. The hourly harvest job is kicked off using a cloud-based service at [CRON.io](https://cron.io/) (a project I recently joined). The rest of the API serves to respond to queries for data (for example, the [JSON equivalent](https://challengeapi-7312.onmodulus.net/challenges) of the source RSS feed).
 
 Because there is already an existing Challenges.gov site and this weekend project was more about providing a proof of concept that just happened to turn out to be a complete working app, the project and license will be transferred to the GSA, the agency responsible for the site. However, it is really interesting to note that the government is actually encouraging people in the private sector to feel free to commercialize any of their products that consume open data.
 

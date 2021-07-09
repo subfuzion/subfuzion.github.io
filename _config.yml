@@ -111,3 +111,8 @@ ga_username: 'UA-45746105-1'
 #build config
 pygments: true
 markdown: kramdown
+
+plugins:
+# https://keith-mifsud.me/projects/jekyll-target-blank
+  - jekyll-target-blank
+
