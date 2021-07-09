@@ -144,7 +144,7 @@ We now have a solid foundation upon which to build an API to help citizens find 
 
 In the next few posts, we'll discuss:
 
-* Building an API layer to responsd to various REST requests for data using [Node](http://nodejs.org/)
+* Building an API layer to respons to various REST requests for data using [Node](http://nodejs.org/){:target="_blank"}
 * Building a mobile-first web app to provide a user interface that consumes the API using Node, [Express](http://expressjs.com/){:target="_blank"}, [EJS templates for Node](https://github.com/visionmedia/ejs), and [Bootstrap](http://getbootstrap.com/)
 * Moving the API and app into production and setting up an automated job to harvest updated SNAP data on a daily basis
 * The open source projects on GitHub that provide a working SNAP API and app; a bit about the architecture and design philosophy; and details how to fork them and keep your fork current, contribute changes, and submit and follow issues.
