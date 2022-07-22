@@ -238,6 +238,8 @@ GEM
       racc (~> 1.4)
     nokogiri (1.11.7-x86_64-darwin)
       racc (~> 1.4)
+    nokogiri (1.11.7-x86_64-linux)
+      racc (~> 1.4)
     nokogumbo (2.0.5)
       nokogiri (~> 1.8, >= 1.8.4)
     octokit (4.21.0)
@@ -278,7 +280,7 @@ GEM
       ethon (>= 0.9.0)
     typogruby (1.0.18)
       rubypants
-    tzinfo (1.2.9)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
     unf (0.1.4)
       unf_ext
@@ -289,6 +291,7 @@ GEM
 
 PLATFORMS
   universal-darwin-20
+  x86_64-linux
 
 DEPENDENCIES
   github-pages
