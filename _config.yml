@@ -5,7 +5,7 @@ name: Tony Pujals
 description: "Node, MongoDB, REST API, Open Data"
 
 #URL of site, include https://, do not include a trailing slash
-url: https://tonypujals.io
+url: https://tonypujals.dev
 
 #files to exclude, array
 exclude: [ 'readme.md', 'vendor' ]
@@ -18,9 +18,9 @@ permalink: /:year/:month/:day/:title/
 
 #prose config, see https://prose.io/help/handbook.html
 prose:
-  siteurl: "https://tonypujals.io"
+  siteurl: "https://tonypujals.dev"
   media: assets/img
-  relativeLinks: https://tonypujals.io/links.jsonp
+  relativeLinks: https://tonypujals.dev/links.jsonp
   metadata:
     _posts:
       - name: categories
